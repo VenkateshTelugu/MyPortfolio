@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root{
+    --swiper-theme-color: #007aff;
+    --primary-white: hsl(0, 0%, 100%);
+    --primary-orange:  hsl(35, 100%, 50%);
+    --primary-dark:  hsl(0, 0%, 0%);
+}
+
+body {
+    font-family: "Poppins", sans-serif ;
+  }
+ 
+  
+
+.main-info{
+    position: relative;
+    margin-top: 3%;
+    color:var(--primary-orange);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Poppins", sans-serif ;
+}
+
+.main-info h3{
+    color: var(--primary-orange);
+    text-transform: uppercase;
+}
+
+.main-info .typed-text{
+    color: var(--primary-white);
+    font-size: 1.2rem;
+}
+
+
+#particles{
+  z-index:-3;
+  position: absolute;
+}
+
+.about-container{
+    position:relative;
+    background-color: rgb(0, 0, 0); 
+    box-shadow: 1px 1px 8px white;
+}
+
+.about-container:hover{
+    border-radius: 10px;
+    /* background-color: rgba(46, 24, 24, 0.6); */
+    background-color: rgb(0, 0, 0,0.5);
+}
+
+.head{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+    padding-top: 0.625rem;
+    padding-bottom: 1.2rem;
+    font-weight: 400;
+    font-size: 1.9rem;
+}
+
+.my-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh; /* or any height you prefer */
+  }
+  
+  .my-image {
+    margin-top: 5vh;
+    border-radius:5px;
+    height: 35vh;
+    box-shadow: 0px 0px 10px white;
+    background-color: black!important;
+  }
+
+ .about-text{
+    padding-top: 2.5rem;
+    padding-right: 3rem;
+    margin-right: 1rem;
+ }
+  
+.skill-heading{
+    color:white;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.skils-text{
+    padding-bottom: 1.5rem;
+    padding-left: 3rem;
+    font-size:0.97rem;
+    font-weight: 500;
+    color:rgb(255, 255, 255);
+}
+
+.skills-container{
+    position:relative;
+    background-color:rgba(0, 0, 0);
+    margin-left: 0.6rem;
+    box-shadow: 0px 0px 4px white;
+}
+
+.skills-container:hover{
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0,0.5);
+}
+
+
+.experience-container{
+    background-color: rgb(0, 0, 0,0.8);
+}
+
+.project-container{
+    background-color: rgb(0, 0, 0,0.8);
+}
+
+.project-col{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card{
+    width: 20rem;
+    font-size: 0.9rem;
+    color:rgb(255, 255, 255) !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.project-card:hover{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 1px 1px 5px white;
+}
+
+.achievements-card{
+    font-size: 0.9rem;
+    color:rgb(255, 255, 255) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0px 0px 3px white;
+}
+
+.achievements-card:hover{
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.contact-form-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.contact-form-col{
+    margin-bottom: 2rem;
+}
+
+.form-control{
+    height: 3rem;
+    border:rgba(255, 255, 255, 0.956) solid 0.08rem !important;
+    color: white !important;
+    font-weight: 300 !important;
+    background-color:rgba(0, 0, 0, 0.1) !important ;
+}
+
+.form-control::placeholder {
+    color: grey !important;
+    opacity: 1; /* Ensure the placeholder color is not faded */
+}
+
+.form-message{
+    height: 5rem;
+}
+
+.icons-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .material-icons {
+    font-size: 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .github-icon {
+    color: #0077B5 !important;
+  }
+  
+  .linkedin-icon {
+    color: #0077B5;
+  }
+  
+  .instagram-icon {
+    color: #0077B5;
+  }
+  
+  .github-icon:hover,
+.linkedin-icon:hover,
+.instagram-icon:hover {
+  filter: drop-shadow(0 0 20px currentColor); /* Glow effect */
+}
+
+.bottom_cls {
+  width: 100%;
+
+}
+.bottom_cls1 {
+  margin: auto;
+  width: fit-content;
+}
+
+.bottom-radius-set{
+  border-radius: 2rem 2rem;
+  z-index: 50;
+}
+
+button:hover .stars {
+    display: block;
+    filter: drop-shadow(0px 0px 20px rgb(255, 0, 0));
+}
