@@ -225,9 +225,13 @@
 // }
 
 // export default Contact;import React, { useRef, useEffect } from "react";import React, { useRef, useEffect } from "react"; // Correct imports
+
+
+
+
+
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { toast } from "react-hot-toast";
 
 function Contact() {
   const form = useRef();
@@ -237,23 +241,19 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_i4xqjdq", // Service ID
-        "template_90zl9yg", // Template ID
+        "service_829699g", // Service ID
+        "template_erkfpza", // Template ID
         form.current,
-        "_H6hUdp1-ITnsGEL4kVdi" // Public Key
+        "Azk4MlXDMT2ScF2Nh" // Public Key
       )
       .then(
         () => {
           form.current.reset();
-          toast.success("Message sent successfully!", {
-            position: "bottom-right",
-          });
+          alert("Message sent successfully!"); // Alert for successful message
         },
         (error) => {
           console.error("FAILED...", error.text);
-          toast.error("Something went wrong!", {
-            position: "bottom-right",
-          });
+          alert("Something went wrong!"); // Alert for error
         }
       );
   };
@@ -289,9 +289,18 @@ function Contact() {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary" style={{ width: "100%" }}>
-          Send Message
+        <button
+          type="submit"
+          className="btn btn-primary"
+          style={{ width: "100%" }}
+        >
+          Send 
         </button>
+
+
+        <div>
+          <h1>Thanks you</h1>
+        </div>
       </form>
     </section>
   );
